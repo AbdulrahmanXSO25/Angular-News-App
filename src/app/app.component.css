@@ -1,1 +1,11 @@
 @import '~normalize.css';
+.router{
+  min-height: 71.5vh;
+}
+footer {
+  padding: 20px 40px;
+  color: #fff;
+  background-color: black;
+  margin: 0;
+  background-color: 0;
+}

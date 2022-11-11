@@ -1,11 +1,48 @@
-<!-- <h1>Egy News</h1>
 
-<ul>
-    <li *ngFor="let news of allEgyNews">{{news.title}}</li>
-</ul>
+<h1><a routerLink="/egy">Egypt News</a></h1>
+<div class="news">
+  <div class="card">
+    <div class="image">
+      <img [src]="allEgyNews[0].urlToImage" alt="">
+    </div>
+    <div class="info" dir="rtl">
+      <div class="title"><a [href]="allEgyNews[0].url">{{allEgyNews[0].title}}</a></div>
+      <div class="author"><a>{{allEgyNews[0].author}}</a></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img [src]="allEgyNews[1].urlToImage" alt="">
+    </div>
+    <div class="info" dir="rtl">
+      <div class="title"><a [href]="allEgyNews[1].url">{{allEgyNews[1].title}}</a></div>
+      <div class="author"><a>{{allEgyNews[1].author}}</a></div>
+    </div>
+  </div>
+</div>
+<h1 class="more"><a routerLink="/egy">More >></a></h1>
 
-<h1>UAE News</h1>
+<!-- ---------- -->
 
-<ul>
-  <li *ngFor="let news of allUAENews">{{news.title}}</li>
-</ul> -->
+<h1><a routerLink="/uae">UAE News</a></h1>
+<div class="news">
+  <div class="card">
+    <div class="image">
+      <img [src]="allUAENews[0].urlToImage" alt="">
+    </div>
+    <div class="info" dir="rtl">
+      <div class="title"><a [href]="allUAENews[0].url">{{allUAENews[0].title}}</a></div>
+      <div class="author"><a>{{allUAENews[0].author}}</a></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img [src]="allUAENews[1].urlToImage" alt="">
+    </div>
+    <div class="info" dir="rtl">
+      <div class="title"><a [href]="allUAENews[1].url">{{allUAENews[1].title}}</a></div>
+      <div class="author"><a>{{allUAENews[1].author}}</a></div>
+    </div>
+  </div>
+</div>
+<h1 class="more"><a routerLink="/uae">More >></a></h1>
