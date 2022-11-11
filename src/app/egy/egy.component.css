@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+a {
+  text-decoration: none;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 94%;
+  margin: 20px 3%;
+}
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Cairo', sans-serif;
+}
+.card .image {
+  width: 100%;
+  overflow: hidden;
+  max-width: 100%;
+}
+.card .image img {
+  width: 100%;
+  max-width: 100%;
+  transition: 1s;
+}
+.card .info {
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.card .info .title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 11px;
+  text-align: center;
+  white-space: initial;
+  height: 100;
+  background-color: #700b30;
+}
+.card .info .title a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.card .info .title a:hover {
+  color: #4dbace;
+  cursor: pointer;
+}
+.card .info .author {
+  text-align: center;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #350d72;
+  color: #fff;
+}

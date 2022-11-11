@@ -1,0 +1,11 @@
+<div class="cards">
+  <div class="card" *ngFor="let new of allUAENews">
+    <div class="image">
+      <img [src]="new.urlToImage" alt="">
+    </div>
+    <div class="info" dir="rtl">
+      <div class="title"><a [href]="new.url">{{new.title}}</a></div>
+      <div class="author"><a>{{new.author}}</a></div>
+    </div>
+  </div>
+</div>

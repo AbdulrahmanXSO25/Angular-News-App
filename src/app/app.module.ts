@@ -9,6 +9,8 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import {HttpClientModule} from '@angular/common/http';
+import { EgyComponent } from './egy/egy.component';
+import { UaeComponent } from './uae/uae.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import {HttpClientModule} from '@angular/common/http';
     SliderComponent,
     MenuComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    EgyComponent,
+    UaeComponent
   ],
   imports: [
     BrowserModule,

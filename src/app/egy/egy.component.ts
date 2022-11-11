@@ -2,14 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import {NewsService} from '../news.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-egy',
+  templateUrl: './egy.component.html',
+  styleUrls: ['./egy.component.css']
 })
-export class HomeComponent implements OnInit {
+export class EgyComponent implements OnInit {
 
   public allEgyNews:any = [];
-  public allUAENews:any = [];
 
   constructor (public _NewsService:NewsService) {
 
@@ -18,13 +17,6 @@ export class HomeComponent implements OnInit {
       this.allEgyNews = data.articles;
 
       console.log(this.allEgyNews);
-    });
-
-    this._NewsService.getNews("ae").subscribe( (data)=>{
-
-      this.allUAENews = data.articles;
-
-      console.log(this.allUAENews);
     });
    }
 
